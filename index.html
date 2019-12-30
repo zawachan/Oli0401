@@ -1,0 +1,50 @@
+<HTML>
+<Title>おりびやApril Foolガチャ</Title>
+</HEAD>
+<BODY bgcolor="#FCCEE4">
+<HR align="center">
+<CENTER><B><FONT color="#FD469E" size="+3">
+おりびやApril Foolガチャ
+</FONT></B></CENTER>
+<HR align="center">
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>おりびやPICKUPガチャ</title>
+<script>
+function getImage(){
+  //画像ファイル名を配列で保持
+  var arr =
+     [
+      'AF1.png',
+      'AF2.png',
+      'AF3.png',
+      'AF4.png',
+      '100oli.png'
+      ];
+ 
+  //ランダムで画像ファイルを取得して表示する
+  var obj = document.getElementById("im1");
+  var a = Math.floor(Math.random() * arr.length);
+  obj.src = arr[a];
+}
+</script>
+</head>
+<body>
+ <center>
+ 
+  <br>
+  <img width="750" height="1000" border="0" id="im1" alt="">
+
+  <br>
+  <br>
+  <input type="button" value="1回まわす" onclick="getImage()"
+  style="WIDTH: 200px; HEIGHT: 70px">
+  </center>
+<br>
+<br>
+<br>
+</body>
+</html>
